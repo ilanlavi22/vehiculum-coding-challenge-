@@ -1,26 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+@layer base {
   body {
-    color: white;
-    background: black;
+    @apply bg-[#ecf0f3] text-[#1f2937] -tracking-normal;
   }
+}
+h1,
+h2,
+h3,
+h5,
+h6 {
+  @apply font-normal;
+}
+/*
+h1 {
+  @apply text-4xl sm:text-5xl md:text-6xl;
+}
+*/
+button {
+  @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white;
+}
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+.nav-links a {
+  padding-inline: 1rem;
+  padding-block: 0.3rem;
+  color: white;
+  background-color: rgb(182, 180, 180);
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+.nav-links a.active {
+  background-color: black;
+}
+.car-black {
+  background: #000;
+}
+.car-red {
+  background: #f40103;
+}
+.car-blue {
+  background: #3d5591;
+}
+.car-silver {
+  background: #c0c0c0;
+}
+.car-grey {
+  background: #9b9b9b;
+}
+
+/*
+slider styles
+*/
+.slick-slide {
+  text-align: center;
+  position: relative;
+}
+.slick-slide:focus {
+  outline: none;
+}
+.slick-slide-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto !important;
+}
+.thumbnail-slider-wrap {
+  height: 85px;
+}
+.thumbnail-slider-wrap .slick-track .slick-slide {
+  text-align: center;
+}
+.thumbnail-slider-wrap .slick-track .slick-slide img {
+  width: 70%;
+  cursor: pointer;
 }

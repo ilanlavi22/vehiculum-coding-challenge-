@@ -1,34 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Vehiculum Coding Challenge
 
-## Getting Started
+## General workflow
 
-First, run the development server:
+1. Using Next.js version 13 (newest)
+2. Home-page (search results) will include the car-color and the car-makes (Marken).
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+3. Using Server Side Rendering (best with Next.js), a massive benefit, to pre-build the pages on the server (per-request) and deliver it to the user faster. It also better for SEO performance.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Car-detail page is using getStaticPaths, getStaticProps, yet again, for best performance.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+5. Images are set at quality of 80% even tough images are not large in size.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+6. Tailwinds: integrated theme Extend and custom classes/selectors e.g gridTemplate.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+7. Using the Next.js Layout and Slug.
 
-## Learn More
+8. Custom 404 page.
 
-To learn more about Next.js, take a look at the following resources:
+9. Features utilities (functions).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+10. React Slider including thumbnails.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+11. Custom Module classes (Sass) styles.
 
-## Deploy on Vercel
+## Extending Solution
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Components / Individual components
+2. Creating Style Components
+3. Dynamic headers (SEO performance)
+4. Serve app via NodeJS Server (RESTful API)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Next.js version 13
+
+There are few bugs with the latest release.
+
+<img src='/search.png'>
+<img src='/single.png'>

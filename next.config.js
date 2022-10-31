@@ -2,6 +2,13 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+
+  images: {
+    unoptimized: true,
+    domains: ['herokuapp.com']
+  },
 }
+
+
 
 module.exports = nextConfig
